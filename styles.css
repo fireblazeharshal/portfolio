@@ -1,0 +1,184 @@
+/* ---------------------------------- BODY -------------------------------------*/
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background-color: #F5F6F5;
+  color: #1B263B;
+}
+
+/* Header General */
+.custom-header {
+  background-color: #F5F6F5;
+  border-bottom: 2px solid #1B263B;
+}
+
+/* Logo */
+.logo h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #1B263B;
+}
+
+/* Nav Links */
+.primary-nav .nav-link,
+.menu-left .nav-link {
+  font-weight: 500;
+  color: #1B263B;
+  transition: color 0.3s ease;
+}
+
+.primary-nav .nav-link:hover,
+.menu-left .nav-link:hover {
+  color: #FF6F61;
+}
+
+/* CTA Button */
+.btn-accent {
+  background-color: #FF6F61;
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  margin-right: 0px;
+}
+.cta-right {
+  margin-left: auto; /* Pushes the button to the right */
+}
+
+
+.btn-accent:hover {
+  background-color: #e85c51;
+}
+
+/* Bottom Header Border */
+#bottom-header {
+  border-color: #778899;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #top-header,
+  #bottom-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+/* ---------------------------------- FOOTER -------------------------------------*/
+/* Footer Base */
+.custom-footer {
+  background-color: #1B263B;
+  font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+/* Footer Headings */
+.custom-footer h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #F5F6F5;
+  margin-bottom: 1rem;
+}
+
+/* Footer Logo */
+.custom-footer .logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #4ECDC4;
+}
+
+/* Footer Links */
+.custom-footer a {
+  color: #F5F6F5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.custom-footer a:hover {
+  color: #FF6F61;
+}
+
+/* Footer Paragraphs */
+.custom-footer p {
+  font-size: 0.95rem;
+  color: #F5F6F5;
+}
+
+/* Accent CTA Button */
+.custom-footer .btn-accent {
+  background-color: #FF6F61;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.custom-footer .btn-accent:hover {
+  background-color: #e65a50;
+}
+
+/* Responsive Footer Spacing */
+@media (max-width: 767px) {
+  .custom-footer .logo-text,
+  .custom-footer .cta {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+/* ---------------------------------- MAIN BODY -------------------------------------*/
+/* Main background section */
+.main-content .main-page {
+  height: 60vh;
+  background: linear-gradient(
+      rgba(27, 38, 59, 0.7),
+      rgba(27, 38, 59, 0.7)
+    ),
+    url('background.jpg') center/cover no-repeat;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Main heading */
+.main-content .main-page h2 {
+  font-size: 2.5rem;
+  color: #F5F6F5;
+  font-weight: 600;
+}
+/* ---------------------------------- CARDS -------------------------------------*/
+/* Card Styling */
+.custom-card {
+  background-color: #ffffff;
+  border: 1px solid #778899;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  color: #1B263B;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(27, 38, 59, 0.15);
+}
+
+/* Icon Styling */
+.card-icon {
+  width: 50px;
+  height: 50px;
+  fill: #4ECDC4;
+}
+
+/* Headings and Text */
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1B263B;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #778899;
+  margin-bottom: 0;
+}

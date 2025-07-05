@@ -1,0 +1,29 @@
+header
+ logo
+ nav
+   home
+   about
+   contact
+ nav
+ menu [left]
+ CTA [right]
+header
+
+body background images
+    main page
+        heading
+        background image / color gradient
+    
+    card container
+        cards * 4 (2 * 2)
+    
+    
+
+
+footer
+ documentation
+ social links
+ logo
+ CTA
+ contacts
+footer

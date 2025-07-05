@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modular Portfolio Page</title>
+  <link rel="stylesheet" src="styles.css" ></link>
+</head>
+<body>
+
+  <!-- Header Include -->
+  <div id="header"></div>
+
+  <!-- Body Include -->
+  <div id="main-body"></div>
+
+  <!-- Footer Include -->
+  <div id="footer"></div>
+
+  <script>
+    // Load external HTML into containers
+    function loadHTML(id, file) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) throw new Error('Page not found');
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+        })
+        .catch(err => {
+          console.error('Error loading ' + file + ':', err);
+        });
+    }
+
+    loadHTML("header", "header.html");
+    loadHTML("main-body", "body.html");
+    loadHTML("footer", "footer.html");
+  </script>
+
+</body>
+</html>
